@@ -1,0 +1,13 @@
+--- 
+- name: create user
+  hosts: all
+  tasks:
+   - name: user creation
+     user:
+       name: anu
+       password: 77777
+       uid: 4500
+       comment: "A normal user"
+       home: /tmp/anu
+       shell: /bin/bash
+...         
